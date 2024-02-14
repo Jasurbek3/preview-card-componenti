@@ -1,0 +1,186 @@
+@import url(./fonts.css);
+
+
+:root {
+    --dark: #0D192C;
+    --blue: #15263F;
+    --white: #FFF;
+    --link: #2E405A;
+    --Soft: #8BACD9;
+    --Cyan: #00FFF8;
+    --Outfit: "Outfit"
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.d-flx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: var(--dark);
+    margin: auto;
+
+}
+
+.Desktop {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: var(--blue);
+    box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.10);
+}
+
+.Desktop-image {
+    padding: 24px;
+}
+
+.img {
+    width: 302px;
+    height: 302px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+img:active {
+    opacity: 0.6;
+    background-color: var(--Cyan);
+}
+.img:hover, .Desktop-title:hover ,.name-title:hover{
+    cursor: pointer; 
+}
+.Desktop-title:active, .name-title:active {
+    color: var(--Cyan);
+}
+
+.Desktop-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px 32px 24px;
+}
+
+.Desktop-title {
+    color: var(--white);
+    font-family: var(--Outfit);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.Desktop-text {
+    max-width: 302px;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    color: var(--Soft);
+    font-family: var(--Outfit);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.Desktop-ETH-day {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Desktop-token {
+    display: flex;
+    align-items: center;
+    color: var(--Cyan);
+    font-family: var(--Outfit);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Desktop-token::before {
+    content: "";
+    display: block;
+    margin-right: 7px;
+    width: 11px;
+    height: 18px;
+    background-image: url(../img/Combined.png);
+}
+
+.Desktop-clock {
+    display: flex;
+    align-items: center;
+    color: var(--Soft);
+    font-family: var(--Outfit);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.Desktop-clock::before {
+    content: "";
+    display: block;
+    margin-right: 7px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/Clock.png);
+}
+
+.link {
+    width: 302px;
+    height: 1px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    background: var(--link);
+}
+
+.Desktop-list__name {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.name-img {
+    width: 33px;
+    height: 33px;
+    border-radius: 33px;
+    border: 1px solid var(--white);
+    background: lightgray 50% / cover no-repeat;
+}
+
+.name-title {
+    display: flex;
+    color: var(--white);
+    font-family: var(--Outfit);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.name-title::before {
+    content: "Creation of";
+    display: block;
+    color: var(--Soft);
+    margin-right: 5px;
+}
+@media ms (max-width:35){
+    
+}
